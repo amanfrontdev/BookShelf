@@ -1,0 +1,113 @@
+
+.book-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  max-width: 500px;
+}
+.search-results {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+/* styles.css */
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Arrange searched books horizontally */
+  flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+}
+
+.search-results .book-card {
+  margin: 1rem; /* Add some margin between book cards */
+}
+
+/* ... Existing styles for .book-card ... */
+/* styles.css */
+
+.search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange searched books horizontally */
+    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+  }
+  
+  .search-results .book-card {
+    margin: 1rem; /* Add some margin between book cards */
+  }
+  /* styles.css */
+
+.search-results {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Arrange searched books horizontally */
+    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+  }
+  
+  .search-results .book-card {
+    margin: 1rem; /* Add some margin between book cards */
+  }
+  .bookshelf ul {
+    display: flex; /* Enable flexbox layout */
+    flex-wrap: wrap; /* Allow items to wrap if needed */
+    margin: 0; /* Remove default margin for spacing */
+    padding: 0; /* Remove default padding for spacing */
+  }
+  
+  /* ... Existing styles for .book-card ... */
+  
+  /* ... Existing styles for .book-card ... */
+  
+.book-search input {
+  padding: 1rem;
+  font-size: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-results li {
+  margin-bottom: 1rem;
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.book-card img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.book-card .book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.book-card .book-details h3 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.book-card .book-details p {
+  font-size: 0.9rem;
+  margin: 0;
+}
