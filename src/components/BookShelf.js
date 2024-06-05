@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import BookCard from './BookCard';
 
 const Bookshelf = () => {
   const [bookshelf, setBookshelf] = useState([]);
@@ -10,16 +12,18 @@ const Bookshelf = () => {
 
   return (
     <div className="bookshelf">
+      <Link to="/" style={{ textDecoration: "none", color: "white" }}> <button className='button' >Home</button></Link>
       <h2>My Bookshelf</h2>
       {bookshelf.length === 0 && <p>Your bookshelf is empty.</p>}
-      <ul>
+      <ul className="search-results">
         {bookshelf.map((book, index) => (
-          <li key={index}> {/* Use index as a fallback key */}
-            <div className="book-details">
-              <h3>{book.title}</h3>
-              <p>by {book.author_name?.[0]}</p> {/* Optional author display */}
-              {/* Add additional book details if available (cover image, etc.) */}
-            </div>
+
+          <li key={book.key}>
+            <BookCard
+              title={book.title}
+              author={book.author_name?.[0]}
+
+            />
           </li>
         ))}
       </ul>

@@ -1,72 +1,63 @@
-
 .book-search {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 2rem auto;
-  max-width: 500px;
+
 }
 .search-results {
-  list-style: none; /* Remove default list styling */
-  padding: 0; /* Remove default padding */
-  margin: 0; /* Remove default margin */
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-/* styles.css */
 
 .search-results {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; /* Arrange searched books horizontally */
-  flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
+  display: flex;
+
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .search-results .book-card {
-  margin: 1rem; /* Add some margin between book cards */
+  margin: 1rem;
 }
 
-/* ... Existing styles for .book-card ... */
-/* styles.css */
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 
 .search-results {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Arrange searched books horizontally */
-    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
-  }
-  
-  .search-results .book-card {
-    margin: 1rem; /* Add some margin between book cards */
-  }
-  /* styles.css */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-.search-results {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex; /* Arrange searched books horizontally */
-    flex-wrap: wrap; /* Allow wrapping to multiple lines if needed */
-  }
-  
-  .search-results .book-card {
-    margin: 1rem; /* Add some margin between book cards */
-  }
-  .bookshelf ul {
-    display: flex; /* Enable flexbox layout */
-    flex-wrap: wrap; /* Allow items to wrap if needed */
-    margin: 0; /* Remove default margin for spacing */
-    padding: 0; /* Remove default padding for spacing */
-  }
-  
-  /* ... Existing styles for .book-card ... */
-  
-  /* ... Existing styles for .book-card ... */
-  
+.search-results .book-card {
+  margin: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.bookshelf ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
 .book-search input {
   padding: 1rem;
   font-size: 1.2rem;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
   border-radius: 5px;
   margin-bottom: 1rem;
 }
@@ -85,21 +76,28 @@
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  border: 1px solid #eee;
-  border-radius: 5px;
+
+  height: 150px;
+  background-color: #ccc;;
+  width: 300px;
+  border-radius: 10px;
   margin-bottom: 1rem;
 }
 
-.book-card img {
-  width: 100px;
-  height: auto;
-  margin-bottom: 0.5rem;
+.get-flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100vw ;
+
+  justify-content: space-around;
 }
 
 .book-card .book-details {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
 }
 
 .book-card .book-details h3 {
@@ -110,4 +108,12 @@
 .book-card .book-details p {
   font-size: 0.9rem;
   margin: 0;
+}
+.button{
+width: 150px;
+background-color: rgba(0, 128, 0, 0.801);
+color: white;
+border-radius: 5px;
+border: none;
+height: 30px;
 }

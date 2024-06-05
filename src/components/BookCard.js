@@ -1,14 +1,14 @@
 import React from 'react';
 
-const BookCard = ({ title, author, coverImageUrl }) => {
+const BookCard = ({ title, author }) => {
   return (
     <div className="book-card">
-      {/* <img src={coverImageUrl} alt={title} /> */}
+      
       <div className="book-details">
-        <h3>{title}</h3>
-        <p>by {author}</p>
+        <h3>Book Name:{title}</h3>
+        <p>Author: {author}</p>
       </div>
-      <button onClick={() => addToBookshelf({ title, author })}>Add to Bookshelf</button>
+      <button onClick={() => addToBookshelf({ title, author })} className='button'>Add to Bookshelf</button>
     </div>
   );
 };

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import BookCard from './BookCard'; // Import your BookCard component
+import { Link } from 'react-router-dom';
+
 
 const BookSearch = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -34,7 +36,13 @@ const BookSearch = () => {
 
   return (
     <div className="book-search">
-      <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search for Books" />
+      <div className='get-flex'> <h1>Search by Book name</h1> <input type="text" value={searchTerm} onChange={handleSearchChange} placeholder="Search for Books" />
+
+       <Link to="/bookshelf"> <button className='button'>Bookshelf </button></Link>
+
+      </div>
+
+
       {isLoading && <p>Loading...</p>} {/* Display loading message while fetching data */}
       {searchResults.length > 0 && (
         <ul className="search-results">
@@ -43,7 +51,7 @@ const BookSearch = () => {
               <BookCard
                 title={book.title}
                 author={book.author_name?.[0]}
-                coverImageUrl={book.cover_i?.[0]}
+
               />
             </li>
           ))}
